@@ -1,6 +1,6 @@
-* {
+/* * {
 	box-sizing: border-box;
-}
+} */
 
 :root {
 	--white: #ffffff;
@@ -24,10 +24,18 @@
 body {
 	font-family: "Open Sans", "Helvetica Neue", sans-serif;
 	font-size: 1.2em;
-	color: var(--gray1);
+	color: var(--white);
 }
 
-form {
+div.a {
+	text-transform: uppercase;
+}
+
+.nav-item {
+	text-transform: capitalize;
+}
+
+/* form {
 	width: 400px;
 }
 
@@ -44,4 +52,4 @@ form {
 	width: 160px;
 	height: 80px;
 	margin: 1px;
-}
+} */

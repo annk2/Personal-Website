@@ -4,69 +4,111 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>05 - Form</title>
+		<title>Anna Kawasaki</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+		/>
 		<link rel="stylesheet" href="../style/styles.css" />
-		<link rel="stylesheet" href="../style/styles2.css" />
+		<!-- <link rel="stylesheet" href="../style/styles2.css" /> -->
 		<script defer src="../src/jsfile.js"></script>
 	</head>
-	<body>
-		<!-- <main class="container"> -->
+	<body class="bg-dark">
 		<main>
-			<form class="form">
-				<!-- <form class="form"> -->
-				<h1 class="title">Registration Form</h1>
-				<div class="form-element">
-					<label for="username">Username:</label>
-					<input
-						class="input-field"
-						type="text"
-						name="username"
-						id="username"
-						autocomplete="on"
+			<!-- this is bootstrap -->
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<a class="navbar-brand" href="#">
+					<img
+						src="../Starbucks-Logo.png"
+						width="100"
+						height="50"
+						class="d-inline-block align-top"
+						alt="AK logo"
 					/>
-				</div>
-				<div class="form-element">
-					<label for="email">Email:</label>
-					<input
-						class="input-field"
-						type="email"
-						name="email"
-						id="email"
-						autocomplete="on"
-					/>
-				</div>
-				<div class="form-element">
-					<label for="password">Password:</label>
-					<input
-						class="input-field"
-						type="password"
-						name="password"
-						id="password"
-						autocomplete="on"
-					/>
-				</div>
-				<fieldset>
-					<legend>Would you like to sign up for the newsletter?</legend>
-					<ul>
-						<li>
-							<input type="radio" name="choice" id="yes" />
-							<label class="radio-label" for="yes">Yes, sign me up</label>
+					anna kawasaki
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<!-- <li class="nav-item active">
+							<a class="nav-link" href="#"
+								>Home <span class="sr-only">(current)</span></a
+							>
+						</li> -->
+						<li class="nav-item active">
+							<a class="nav-link" href="#prev-work">Work Experience</a>
 						</li>
-						<li>
-							<input type="radio" name="choice" id="no" />
-							<label class="radio-label" for="no">No, thank you</label>
+						<li class="nav-item active">
+							<a class="nav-link" href="#projects">Projects</a>
 						</li>
 					</ul>
-				</fieldset>
-				<div class="form-element">
-					<label for="date">Date:</label>
-					<input class="input-field" type="date" name="date" id="date" />
 				</div>
-				<div class="btn-format">
-					<input class="btn btn-primary" type="submit" value="Submit" />
-					<input class="btn btn-secondary" type="reset" value="Reset" />
+			</nav>
+			<!-- this is bootstrap -->
+
+			<!-- this is bootstrap -->
+			<div class="jumbotron jumbotron-fluid">
+				<div class="container">
+					<h1 class="display-4">About</h1>
+					<p class="lead">
+						Anna Kawasaki is a junior at Portland State University where she is
+						majoring in Computer Science. She currently has special interests in
+						web development, graphics, and natural language processing.
+						Currently, she is working as a Technical Course Support Specialist,
+						helping students working in the lower-division programs. Though she
+						is still exploring different career paths, she hopes to ultimately
+						focus on making technology more accessible rather than more
+						advanced. When she is not busy hitting her head against her keyboard
+						trying to figure out a bug that takes 2 seconds to fix, she enjoys
+						creating digital art and reading books about history.
+					</p>
 				</div>
-			</form>
+			</div>
+			<!-- this is bootstrap -->
+
+			<h1 id="prev-work">Previous Work</h1>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias modi
+				dolor, veniam repudiandae quisquam quod quibusdam. Voluptatibus maxime
+				excepturi laborum? Maxime eos temporibus voluptatem impedit. Cum
+				repudiandae eius perferendis in! Lorem, ipsum dolor sit amet consectetur
+				adipisicing elit. Commodi eligendi saepe repellendus temporibus ab earum
+				debitis fuga facere, enim tempora! Eius reprehenderit molestiae dolor
+				accusantium vel quis animi hic pariatur.
+			</p>
+
+			<h1 id="projects">Projects</h1>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minus
+				culpa veritatis assumenda numquam, laudantium ipsa odit sint quas libero
+				tempora, illo aspernatur ab dolorem, ut voluptatibus repellendus minima
+				est.
+			</p>
 		</main>
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"
+		></script>
 	</body>
 </html>
