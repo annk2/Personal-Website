@@ -16,16 +16,16 @@
 	<body class="bg-dark">
 		<main>
 			<!-- this is bootstrap -->
-			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
 				<a class="navbar-brand" href="#">
-					<img
+					<!-- <img
 						src="../Starbucks-Logo.png"
 						width="100"
 						height="50"
 						class="d-inline-block align-top"
 						alt="AK logo"
-					/>
-					anna kawasaki
+					/> -->
+					<div class="display-5 fw-bold">Anna Kawasaki</div>
 				</a>
 				<button
 					class="navbar-toggler"
@@ -38,13 +38,19 @@
 				>
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
+				<div
+					class="collapse navbar-collapse justify-content-end"
+					id="navbarNav"
+				>
 					<ul class="navbar-nav">
 						<!-- <li class="nav-item active">
 							<a class="nav-link" href="#"
 								>Home <span class="sr-only">(current)</span></a
 							>
 						</li> -->
+						<li class="nav-item active">
+							<a class="nav-link" href="#">About</a>
+						</li>
 						<li class="nav-item active">
 							<a class="nav-link" href="#prev-work">Career</a>
 						</li>
@@ -56,29 +62,32 @@
 			</nav>
 			<!-- this is bootstrap -->
 
+			<img
+				src="../pictureofme.JPG"
+				alt="photo of Anna Kawasaki"
+				id="mepicture"
+			/>
 			<!-- this is bootstrap -->
-			<div class="jumbotron jumbotron-fluid">
-				<div class="container">
-					<h1 class="display-4">About</h1>
-					<p class="lead">
-						Anna Kawasaki is a junior at Portland State University where she is
-						majoring in Computer Science. She currently has special interests in
-						web development, graphics, and natural language processing.
-						Currently, she is working as a Technical Course Support Specialist,
-						helping students working in the lower-division programs. Though she
-						is still exploring different career paths, she hopes to ultimately
-						focus on making technology more accessible rather than more
-						advanced. When she is not busy hitting her head against her keyboard
-						trying to figure out a bug that takes 2 seconds to fix, she enjoys
-						creating digital art and reading books about history.
-					</p>
-				</div>
+			<div class="container py-5">
+				<h1 class="display-5 fw-bold">About</h1>
+				<p class="col-mid-8 fs-4">
+					Anna Kawasaki is a junior at Portland State University where she is
+					majoring in Computer Science. She currently has special interests in
+					web development, graphics, and natural language processing. Currently,
+					she is working as a Technical Course Support Specialist, helping
+					students working in the lower-division programs. Though she is still
+					exploring different career paths, she hopes to ultimately focus on
+					making technology more accessible rather than more advanced. When she
+					is not busy hitting her head against her keyboard trying to figure out
+					a bug that takes 2 seconds to fix, she enjoys creating digital art and
+					reading books about history.
+				</p>
 			</div>
 			<!-- this is bootstrap -->
 
-			<div class="container">
-				<h1 id="prev-work">Career</h1>
-				<p>
+			<div class="container py-5">
+				<h1 class="display-5 fw-bold" id="prev-work">Career</h1>
+				<p class="col-mid-8 fs-4">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias modi
 					dolor, veniam repudiandae quisquam quod quibusdam. Voluptatibus maxime
 					excepturi laborum? Maxime eos temporibus voluptatem impedit. Cum
@@ -89,8 +98,8 @@
 				</p>
 			</div>
 
-			<div class="container">
-				<h1 id="projects">Projects</h1>
+			<div class="container py-5">
+				<h1 class="display-5 fw-bold" id="projects">Projects</h1>
 				<div
 					id="carouselExampleCaptions"
 					class="carousel slide"
