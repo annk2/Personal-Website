@@ -23,7 +23,7 @@
 }
 
 html {
-	scroll-padding-top: 100px;
+	scroll-padding-top: 200px;
 }
 
 body {
@@ -47,12 +47,12 @@ body {
 	border-width: 1em;
 	border-style: solid;
 	margin: auto;
-	height: 50%;
-	width: 50%;
+	height: 30em;
+	width: 30em;
 }
 
 .carousel {
-	margin: auto;
+	margin: 3em;
 }
 
 .carousel .carousel-item {
@@ -67,6 +67,21 @@ body {
 	/* left: 0; */
 	min-height: 500px;
 }
+
+.container {
+	display: block;
+	border-radius: 15%;
+	border-color: var(--white);
+	border-width: 0.25em;
+	border-style: solid;
+	padding: 3em;
+	margin: 3em auto;
+}
+
+.input-field {
+	margin-left: 10em;
+}
+
 /* form {
 	width: 400px;
 }
