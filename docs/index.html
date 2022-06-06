@@ -13,88 +13,211 @@
 		<!-- <link rel="stylesheet" href="../style/styles2.css" /> -->
 		<!-- <script defer src="../src/jsfile.js"></script> -->
 	</head>
-	<body class="bg-dark">
+	<body class="bg">
 		<main>
 			<!-- this is bootstrap -->
-			<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-				<a class="navbar-brand" href="#">
-					<!-- <img
+			<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">
+						<!-- <img
 						src="../Starbucks-Logo.png"
 						width="100"
 						height="50"
 						class="d-inline-block align-top"
 						alt="AK logo"
 					/> -->
-					<div class="display-5 fw-bold">Anna Kawasaki</div>
-				</a>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-toggle="collapse"
-					data-target="#navbarNav"
-					aria-controls="navbarNav"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div
-					class="collapse navbar-collapse justify-content-end"
-					id="navbarNav"
-				>
-					<ul class="navbar-nav">
-						<!-- <li class="nav-item active">
+						<div class="display-5 fw-bold">Anna Kawasaki</div>
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarNav"
+						aria-controls="navbarNav"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div
+						class="collapse navbar-collapse justify-content-end"
+						id="navbarNav"
+					>
+						<ul class="navbar-nav">
+							<!-- <li class="nav-item active">
 							<a class="nav-link" href="#"
 								>Home <span class="sr-only">(current)</span></a
 							>
 						</li> -->
-						<li class="nav-item active">
-							<a class="nav-link" href="#">About</a>
-						</li>
-						<li class="nav-item active">
-							<a class="nav-link" href="#career">Career</a>
-						</li>
-						<li class="nav-item active">
-							<a class="nav-link" href="#projects">Projects</a>
-						</li>
-						<li class="nav-item active">
-							<a class="nav-link" href="#contact-form">Contact</a>
-						</li>
-					</ul>
+							<li class="nav-item active">
+								<a class="nav-link" href="#about" id="nav-link">About</a>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link" href="#experience">Experience</a>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link" href="#projects">Projects</a>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link" href="#contact-form">Contact</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</nav>
 			<!-- this is bootstrap -->
 
-			<img src="pictureofme.JPG" alt="photo of Anna Kawasaki" id="mepicture" />
-			<!-- this is bootstrap -->
 			<div class="container py-5">
-				<h1 class="display-5 fw-bold">About</h1>
-				<p class="col-mid-8 fs-4">
-					Anna Kawasaki is a junior at Portland State University where she is
-					majoring in Computer Science. She currently has special interests in
-					web development, graphics, and natural language processing. Currently,
-					she is working as a Technical Course Support Specialist, helping
-					students working in the lower-division programs. Though she is still
-					exploring different career paths, she hopes to ultimately focus on
-					making technology more accessible rather than more advanced. When she
-					is not busy hitting her head against her keyboard trying to figure out
-					a bug that takes 2 seconds to fix, she enjoys creating digital art and
-					reading books about history.
-				</p>
+				<h1 class="display-5 fw-bold" id="about">About</h1>
+				<div class="row">
+					<div class="col-xl-5 col-lg-12">
+						<img
+							src="pictureofme2.png"
+							alt="photo of Anna Kawasaki"
+							id="mepicture"
+						/>
+					</div>
+					<!-- this is bootstrap -->
+					<p class="fs-4 col-xl-7 col-lg-12">
+						Anna Kawasaki is a junior at Portland State University where she is
+						majoring in Computer Science. She currently has special interests in
+						web development, graphics, and natural language processing.
+						Currently, she is working as a Technical Course Support Specialist,
+						helping students working in the lower-division programs. Though she
+						is still exploring different career paths, she hopes to ultimately
+						focus on making technology more accessible rather than more
+						advanced. When she is not busy hitting her head against her keyboard
+						trying to figure out a bug that takes 2 seconds to fix, she enjoys
+						creating digital art and reading books about history.
+					</p>
+				</div>
 			</div>
 			<!-- this is bootstrap -->
 
 			<div class="container py-5">
-				<h1 class="display-5 fw-bold" id="prev-work">Career</h1>
-				<p class="col-mid-8 fs-4">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias modi
-					dolor, veniam repudiandae quisquam quod quibusdam. Voluptatibus maxime
-					excepturi laborum? Maxime eos temporibus voluptatem impedit. Cum
-					repudiandae eius perferendis in! Lorem, ipsum dolor sit amet
-					consectetur adipisicing elit. Commodi eligendi saepe repellendus
-					temporibus ab earum debitis fuga facere, enim tempora! Eius
-					reprehenderit molestiae dolor accusantium vel quis animi hic pariatur.
-				</p>
+				<h1 class="display-5 fw-bold" id="experience">Experience</h1>
+
+				<!-- try to make accordion-flush work? -->
+				<div class="accordion">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="panelsStayOpen-headingOne">
+							<button
+								class="accordion-button collapsed fs-4 fw-bold bg"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#panelsStayOpen-collapseOne"
+								aria-expanded="false"
+								aria-controls="panelsStayOpen-collapseOne"
+							>
+								Work
+							</button>
+						</h2>
+						<div
+							id="panelsStayOpen-collapseOne"
+							class="accordion-collapse collapse"
+							aria-labelledby="panelsStayOpen-headingOne"
+						>
+							<div class="accordion-body d-md-block bg">
+								<div class="fw-bold m-3">
+									<h3>Technical Course Support Specialist</h3>
+									<div>Portland State University</div>
+									<div>Fall 2021-Ongoing</div>
+								</div>
+								<ul>
+									<li>Helped students identify and resolve bugs in programs</li>
+									<li>
+										Explained complicated concepts to students using visual and
+										verbal teaching methods
+									</li>
+									<li>
+										Course materials focused on Linux, C++ syntax, data
+										structures, and object-oriented programming
+									</li>
+								</ul>
+
+								<div class="fw-bold m-3">
+									<h3>Learning Assistant</h3>
+									<div>University of Oregon</div>
+									<div>Fall 2019</div>
+								</div>
+								<ul>
+									<li>
+										Provided attentive, friendly assistance during class-time
+									</li>
+									<li>
+										Collaborated with professor to adjust the learning
+										curriculum and create a comfortable academic environment
+									</li>
+									<li>
+										Course materials focused on Python syntax, and language
+										processing
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+							<button
+								class="accordion-button collapsed fs-4 fw-bold bg"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#panelsStayOpen-collapseTwo"
+								aria-expanded="false"
+								aria-controls="panelsStayOpen-collapseTwo"
+							>
+								Coursework
+							</button>
+						</h2>
+						<div
+							id="panelsStayOpen-collapseTwo"
+							class="accordion-collapse collapse"
+							aria-labelledby="panelsStayOpen-headingTwo"
+						>
+							<div class="accordion-body d-md-block bg">
+								<div><strong>CS163: </strong> Data Structures</div>
+								<div><strong>CS202: </strong> Programming Systems</div>
+								<div><strong>CS201: </strong> Computer Systems Programming</div>
+								<div>
+									<strong>CS300: </strong> Elements of Software Engineering
+								</div>
+								<div><strong>CS333: </strong> Intro to Operating Systems</div>
+								<div><strong>CS350: </strong> Algorithms & Complexity</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="panelsStayOpen-headingThree">
+							<button
+								class="accordion-button collapsed fs-4 fw-bold bg"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#panelsStayOpen-collapseThree"
+								aria-expanded="false"
+								aria-controls="panelsStayOpen-collapseThree"
+							>
+								Skills
+							</button>
+						</h2>
+						<div
+							id="panelsStayOpen-collapseThree"
+							class="accordion-collapse collapse"
+							aria-labelledby="panelsStayOpen-headingThree"
+						>
+							<div class="accordion-body d-md-block bg">
+								<strong>This is the third item's accordion body.</strong> It is
+								hidden by default, until the collapse plugin adds the
+								appropriate classes that we use to style each element. These
+								classes control the overall appearance, as well as the showing
+								and hiding via CSS transitions. You can modify any of this with
+								custom CSS or overriding our default variables. It's also worth
+								noting that just about any HTML can go within the
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- <p class="col-mid-8 fs-4"> -->
+				<!-- </p> -->
 			</div>
 
 			<div class="container py-5">
@@ -127,9 +250,8 @@
 							aria-label="Slide 3"
 						></button>
 					</div>
-					<div class="carousel-inner">
+					<div class="carousel-inner container">
 						<div class="carousel-item active">
-							<img src="placeholdr.jpg" class="d-block w-100" alt="..." />
 							<div class="carousel-caption d-none d-md-block">
 								<h5>First slide label</h5>
 								<p>

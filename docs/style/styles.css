@@ -3,7 +3,8 @@
 } */
 
 :root {
-	/* --main-bg-color: coral; */
+	--main-bg-color: #13152b;
+	--main-fg-color: #fc97f8;
 	--white: #ffffff;
 	--gray1: #333333;
 	--gray2: #555555;
@@ -22,16 +23,21 @@
 	--green: #006400;
 }
 
+.bg {
+	background-color: var(--main-bg-color);
+}
+
 html {
 	scroll-padding-top: 200px;
 }
 
 body {
-	font-family: "Open Sans", "Helvetica Neue", sans-serif;
-	font-size: 1.2em;
+	/* font-family: "Open Sans", "Helvetica Neue", sans-serif; */
+	font-family: "Lucida Console", Courier, monospace;
+	/* font-size: 1.2em; */
 	color: var(--white);
 	margin: 44px auto 0;
-	padding: 10em;
+	padding: 2em;
 }
 
 .navbar {
@@ -41,14 +47,23 @@ body {
 }
 
 #mepicture {
-	display: block;
 	border-radius: 15%;
-	border-color: var(--white);
+	/* display: inline; */
+	/* border-color: var(--main-fg-color);
 	border-width: 1em;
-	border-style: solid;
+	border-style: solid; */
+	max-width: 100%;
+	max-height: 100%;
+	width: auto;
+	height: auto;
 	margin: auto;
+	margin-bottom: 2em;
+	/* height: 100%;
+	width: 100%; */
+	/* object-fit: contain; */
+	/* margin: auto;
 	height: 30em;
-	width: 30em;
+	width: 30em; */
 }
 
 .carousel {
@@ -56,10 +71,12 @@ body {
 }
 
 .carousel .carousel-item {
+	border-radius: 15%;
 	height: 500px;
 }
 
 .carousel-item img {
+	border-radius: 15%;
 	position: absolute;
 	object-fit: cover;
 	/* margin-bottom: 10%; */
@@ -71,7 +88,8 @@ body {
 .container {
 	display: block;
 	border-radius: 15%;
-	border-color: var(--white);
+	color: var(--main-fg-color);
+	border-color: var(--main-fg-color);
 	border-width: 0.25em;
 	border-style: solid;
 	padding: 3em;
@@ -81,6 +99,38 @@ body {
 .input-field {
 	margin-left: 10em;
 }
+
+.accordion-button {
+	color: var(--main-fg-color);
+}
+
+.accordion-button:focus {
+	color: var(--main-bg-color);
+	background-color: var(--main-fg-color);
+	/* box-shadow: 0 0 8px var(--main-fg-color); */
+	box-shadow: none;
+}
+
+/* https://stackoverflow.com/questions/66335238/changing-the-color-arrow-in-bootstrap */
+.accordion-button:after {
+	background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.btn-format {
+	justify-content: end;
+	margin: 10%;
+}
+
+.btn-primary {
+	background-color: var(--main-bg-color);
+}
+
+.carousel-inner.container {
+	border: none;
+}
+
+/* .carousel svg{
+} */
 
 /* form {
 	width: 400px;
