@@ -52,12 +52,12 @@ body {
 	/* border-color: var(--main-fg-color);
 	border-width: 1em;
 	border-style: solid; */
-	max-width: 100%;
-	max-height: 100%;
+	max-width: 80%;
+	max-height: 80%;
 	width: auto;
 	height: auto;
-	margin: auto;
-	margin-bottom: 2em;
+	margin: 2em 2em auto;
+	/* margin-bottom: 2em; */
 	/* height: 100%;
 	width: 100%; */
 	/* object-fit: contain; */
@@ -70,19 +70,16 @@ body {
 	margin: 3em;
 }
 
-.carousel .carousel-item {
-	border-radius: 15%;
-	height: 500px;
-}
-
 .carousel-item img {
-	border-radius: 15%;
-	position: absolute;
-	object-fit: cover;
+	/* margin: 10%; */
+	/* size: 30%; */
+	/* border-radius: 15%; */
+	/* object-fit: cover; */
 	/* margin-bottom: 10%; */
 	/* top: 0; */
 	/* left: 0; */
-	min-height: 500px;
+	height: 300px;
+	width: 300px;
 }
 
 .container {
@@ -94,6 +91,15 @@ body {
 	border-style: solid;
 	padding: 3em;
 	margin: 3em auto;
+}
+
+.carousel-item {
+	/* border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 15%; */
+	height: 500px;
 }
 
 .input-field {
@@ -125,11 +131,88 @@ body {
 	background-color: var(--main-bg-color);
 }
 
-.carousel-inner.container {
-	border: none;
+.form {
+	position: relative;
+	/* width: 350px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 10px;
+	padding: 20px 15px;
+	margin: auto auto; */
 }
 
-/* .carousel svg{
+/* .form-element {
+	text-align: left;
+	margin: 30px auto;
+	font-weight: bold;
+} */
+
+.input-field {
+	color: var(--white);
+	border: solid;
+	border-color: var(--main-fg-color);
+	/* position: absolute; */
+	width: 60%;
+	/* right: 15px; */
+}
+
+.input-field:focus {
+	border-color: var(--main-fg-color);
+	box-shadow: 0px 0px 5px var(--main-fg-color);
+}
+
+.btn-format {
+	display: flex;
+	align-items: flex-end;
+}
+
+.btn {
+	width: 30%;
+	display: inline-block;
+	padding: 10px 10px;
+	border-style: solid;
+	border-radius: 3px;
+	border-color: var(--main-fg-color);
+}
+
+.btn-primary {
+	background-color: var(--main-fg-color);
+	color: var(--main-bg-color);
+}
+
+.btn-secondary {
+	background-color: var(--main-bg-color);
+	border-style: solid;
+	color: var(--main-fg-color);
+}
+
+.btn-primary:hover {
+	background-color: var(--white);
+	border-color: var(--white);
+	color: var(--main-bg-color);
+}
+
+.btn-secondary:hover {
+	background-color: var(--lightorange);
+}
+
+/* .bi-carousel {
+	display: inline-block;
+	vertical-align: middle;
+	width: 10em;
+	height: 10em;
+} */
+
+/* .carousel-inner.container {
+	border: none;
+} */
+
+/* .bi-carousel {
+	max-width: 80%;
+	max-height: 80%;
+	width: 1000px;
+	height: 1000px;
+	margin: 2em 2em auto;
 } */
 
 /* form {
