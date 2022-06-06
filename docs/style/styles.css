@@ -1,7 +1,3 @@
-/* * {
-	box-sizing: border-box;
-} */
-
 :root {
 	--main-bg-color: #13152b;
 	--main-fg-color: #fc97f8;
@@ -10,17 +6,52 @@
 	--gray2: #555555;
 	--gray3: #cccccc;
 	--gray4: #aaaaaa;
-
 	--black: #080808;
-	--teal: #006060;
-	--lightteal: #008080;
-	--purple: #800080;
-	--navy: #000080;
-	--cyan: #17a2b8;
-	--violetred: #c71585;
-	--red: #ff0000;
-	--orange: #ffa500;
-	--green: #006400;
+}
+
+h1 {
+	color: var(--white);
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1rem;
+}
+
+@media (min-width: 544px) {
+	h1 {
+		font-size: 2rem;
+	}
+	h2 {
+		font-size: 1rem;
+	}
+}
+
+@media (min-width: 768px) {
+	h1 {
+		font-size: 2rem;
+	}
+	h2 {
+		font-size: 1.25rem;
+	}
+}
+
+@media (min-width: 992px) {
+	h1 {
+		font-size: 2.5rem;
+	}
+	h2 {
+		font-size: 1.25rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	h1 {
+		font-size: 3rem;
+	}
+	h2 {
+		font-size: 1.5rem;
+	}
 }
 
 .bg {
@@ -31,14 +62,8 @@ html {
 	scroll-padding-top: 200px;
 }
 
-h1 {
-	color: var(--white);
-}
-
 body {
-	/* font-family: "Open Sans", "Helvetica Neue", sans-serif; */
-	font-family: "Lucida Console", Courier, monospace;
-	/* font-size: 1.2em; */
+	font-family: "Lucida Console", Menlo-Regular, monospace;
 	color: var(--white);
 	margin: 44px auto 0;
 	padding: 2em;
@@ -52,22 +77,8 @@ nav {
 
 #mepicture {
 	border-radius: 15%;
-	/* display: inline; */
-	/* border-color: var(--main-fg-color);
-	border-width: 1em;
-	border-style: solid; */
 	max-width: 100%;
 	max-height: 100%;
-	/* width: auto;
-	height: auto; */
-	margin: 1em 1em auto;
-	/* margin-bottom: 2em; */
-	/* height: 100%;
-	width: 100%; */
-	/* object-fit: contain; */
-	/* margin: auto;
-	height: 30em;
-	width: 30em; */
 }
 
 .carousel {
@@ -75,13 +86,6 @@ nav {
 }
 
 .carousel-item img {
-	/* margin: 10%; */
-	/* size: 30%; */
-	/* border-radius: 15%; */
-	/* object-fit: cover; */
-	/* margin-bottom: 10%; */
-	/* top: 0; */
-	/* left: 0; */
 	height: 300px;
 	width: 300px;
 }
@@ -98,11 +102,6 @@ nav {
 }
 
 .carousel-item {
-	/* border: none;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-radius: 15%; */
 	height: 500px;
 }
 
@@ -118,11 +117,9 @@ nav {
 .accordion-button:focus {
 	color: var(--main-bg-color);
 	background-color: var(--main-fg-color);
-	/* box-shadow: 0 0 8px var(--main-fg-color); */
 	box-shadow: none;
 }
 
-/* https://stackoverflow.com/questions/66335238/changing-the-color-arrow-in-bootstrap */
 .accordion-button:after {
 	background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
 }
@@ -138,22 +135,9 @@ nav {
 
 .form {
 	position: relative;
-	/* width: 350px;
-	border-style: solid;
-	border-width: 1px;
-	border-radius: 10px;
-	padding: 20px 15px;
-	margin: auto auto; */
 }
 
-/* .form-element {
-	text-align: left;
-	margin: 30px auto;
-	font-weight: bold;
-} */
-
 .input-field {
-	/* top: 0; */
 	color: var(--white);
 	border: solid;
 	border-color: var(--main-fg-color);
@@ -161,16 +145,6 @@ nav {
 	width: 60%;
 	right: 10px;
 }
-
-/* .alert-warning {
-	background-color: var(--white);
-	color: var(--main-bg-color);
-	width: 30%;
-	display: inline-block;
-	padding: 10px 10px;
-	border-style: solid;
-	border-radius: 3px;
-} */
 
 .input-field:focus {
 	border-color: var(--main-fg-color);
@@ -221,41 +195,3 @@ nav {
 .carousel-caption {
 	margin-top: 5%;
 }
-
-/* .bi-carousel {
-	display: inline-block;
-	vertical-align: middle;
-	width: 10em;
-	height: 10em;
-} */
-
-/* .carousel-inner.container {
-	border: none;
-} */
-
-/* .bi-carousel {
-	max-width: 80%;
-	max-height: 80%;
-	width: 1000px;
-	height: 1000px;
-	margin: 2em 2em auto;
-} */
-
-/* form {
-	width: 400px;
-}
-
-.flex-item,
-.grid-item {
-	padding: 10px;
-	background-color: var(--purple);
-	color: var(--white);
-	font-size: 2.4em;
-	text-align: center;
-}
-
-.flex-item {
-	width: 160px;
-	height: 80px;
-	margin: 1px;
-} */

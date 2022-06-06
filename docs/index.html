@@ -10,7 +10,6 @@
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
 		/>
 		<link rel="stylesheet" href="style/styles.css" />
-		<!-- <link rel="stylesheet" href="../style/styles2.css" /> -->
 		<script defer src="src/jsfile.js"></script>
 	</head>
 	<body class="bg">
@@ -18,7 +17,7 @@
 			<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg">
 				<div class="container-fluid">
 					<a class="navbar-brand" href="#">
-						<div class="display-5 fw-bold">Anna Kawasaki</div>
+						<h1 class="fw-bold">Anna Kawasaki</h1>
 					</a>
 					<button
 						class="navbar-toggler"
@@ -54,7 +53,7 @@
 			</nav>
 
 			<div class="container py-5">
-				<h1 class="display-5 fw-bold" id="about">About</h1>
+				<h1 class="fw-bold" id="about">About</h1>
 				<div class="row">
 					<div class="col-md-12 col-lg-5">
 						<img
@@ -63,7 +62,7 @@
 							id="mepicture"
 						/>
 					</div>
-					<p class="fs-4 col-md-12 col-lg-7 pl-lg-3 mt-3">
+					<h2 class="col-md-12 col-lg-7 pl-lg-3 mt-3">
 						Anna Kawasaki is a junior at Portland State University where she is
 						majoring in Computer Science. She currently has special interests in
 						web development, graphics, and natural language processing.
@@ -74,14 +73,13 @@
 						advanced. When she is not busy hitting her head against her keyboard
 						trying to figure out a bug that takes 2 seconds to fix, she enjoys
 						creating digital art and reading books about history.
-					</p>
+					</h2>
 				</div>
 			</div>
 
 			<div class="container py-5">
-				<h1 class="display-5 fw-bold" id="experience">Experience</h1>
+				<h1 class="fw-bold" id="experience">Experience</h1>
 
-				<!-- try to make accordion-flush work? -->
 				<div class="accordion">
 					<div class="accordion-item">
 						<h2 class="accordion-header" id="panelsStayOpen-headingOne">
@@ -103,7 +101,9 @@
 						>
 							<div class="accordion-body d-md-block bg">
 								<div class="fw-bold m-3">
-									<h2 class="fs-4">Technical Course Support Specialist</h2>
+									<h2 class="fw-bold text-decoration-underline fs-4">
+										Technical Course Support Specialist
+									</h2>
 									<div>Portland State University</div>
 									<div>Fall 2021-Ongoing</div>
 								</div>
@@ -120,7 +120,9 @@
 								</ul>
 
 								<div class="fw-bold m-3">
-									<h2 class="fs-4">Learning Asssistant</h2>
+									<h2 class="fw-bold text-decoration-underline fs-4">
+										Learning Asssistant
+									</h2>
 									<div>University of Oregon</div>
 									<div>Fall 2019</div>
 								</div>
@@ -203,12 +205,10 @@
 						</div>
 					</div>
 				</div>
-				<!-- <p class="col-mid-8 fs-4"> -->
-				<!-- </p> -->
 			</div>
 
 			<div class="container py-5">
-				<h1 class="display-5 fw-bold" id="projects">Projects</h1>
+				<h1 class="fw-bold" id="projects">Projects</h1>
 				<div
 					id="carouselExampleCaptions"
 					class="carousel slide"
@@ -240,7 +240,6 @@
 
 					<div class="carousel-inner">
 						<div class="carousel-item active carousel-container">
-							<!-- possibly get rid of img for mobile -->
 							<img src="terminal.svg" class="d-block w-100" alt="Slide 1" />
 							<div class="carousel-caption d-md-block">
 								<a href="https://github.com/annk2/MyLangParseTree">
@@ -307,7 +306,7 @@
 
 			<div class="container py-5">
 				<form class="form">
-					<h1 class="display-5 fw-bold" id="contact-form">Contact Form</h1>
+					<h1 class="fw-bold" id="contact-form">Contact Form</h1>
 					<div class="form-element">
 						<label class="fs-4" for="name">Name:</label>
 						<input
@@ -336,7 +335,6 @@
 							id="message"
 							rows="3"
 						></textarea>
-						<!-- type="text" -->
 					</div>
 					<div class="form-element btn-format">
 						<input class="btn btn-primary" id="confirm" value="Confirm" />
@@ -354,6 +352,9 @@
 					</div>
 				</form>
 			</div>
+			<footer>
+				<p></p>
+			</footer>
 		</main>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
